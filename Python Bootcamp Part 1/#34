@@ -1,0 +1,12 @@
+print("1) Square\n2) Triangle")
+choice = int(input("Enter a number: "))
+
+if choice == 1:
+    side = float(input("Enter the side length: "))
+    print(f"Area of square: {side * side}")
+elif choice == 2:
+    base = float(input("Enter the base: "))
+    height = float(input("Enter the height: "))
+    print(f"Area of triangle: {0.5 * base * height}")
+else:
+    print("Error message")

@@ -1,0 +1,12 @@
+count = 0
+
+while True:
+    name = input("Enter the name of someone to invite: ")
+    print(f"{name} has now been invited!")
+    count += 1
+    
+    more = input("Do you want to invite another person? (yes/no): ").lower()
+    if more != "yes":
+        break
+
+print(f"You have invited {count} people to the party.")

@@ -1,0 +1,9 @@
+total_bill = float(input("Enter the total price of the bill: "))
+
+num_diners = int(input("Enter the number of diners: "))
+
+if num_diners > 0:
+    amount_per_person = total_bill / num_diners
+    print(f"Each person must pay: ${amount_per_person:.2f}")
+else:
+    print("Number of diners must be greater than zero.")
