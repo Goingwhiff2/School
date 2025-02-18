@@ -1,0 +1,10 @@
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+row = int(input("Enter row number (0-2): "))
+column = int(input("Enter column number (0-2): "))
+print(f"Value: {matrix[row][column]}")
+
+change = input("Do you want to change this value? (yes/no) ")
+if change.lower() == "yes":
+    matrix[row][column] = int(input("Enter new value: "))
+
+print("Updated row:", matrix[row])

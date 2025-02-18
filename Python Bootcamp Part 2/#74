@@ -1,0 +1,8 @@
+foods = {i+1: input(f"Enter favorite food {i+1}: ") for i in range(4)}
+print("Your food list:", foods)
+
+remove_index = int(input("Which food number do you want to remove? "))
+if remove_index in foods:
+    del foods[remove_index]
+
+print("Updated list:", dict(sorted(foods.items())))

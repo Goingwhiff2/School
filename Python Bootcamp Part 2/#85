@@ -1,0 +1,12 @@
+numbers = []
+for _ in range(3):
+    num = int(input("Enter a number: "))
+    numbers.append(num)
+
+print("Numbers:", numbers)
+
+keep = input("Do you want to keep the last number? (yes/no) ").lower()
+if keep == "no":
+    numbers.pop()
+
+print("Updated numbers:", numbers)

@@ -1,0 +1,12 @@
+people = {}
+for _ in range(4):
+    name = input("Enter name: ")
+    age = int(input("Enter age: "))
+    shoe_size = int(input("Enter shoe size: "))
+    people[name] = (age, shoe_size)
+
+search_name = input("Enter a name to look up: ")
+if search_name in people:
+    print(f"Age: {people[search_name][0]}, Shoe Size: {people[search_name][1]}")
+else:
+    print("Name not found.")

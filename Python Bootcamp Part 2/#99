@@ -1,0 +1,13 @@
+data = [[i+j for j in range(4)] for i in range(4)]
+for row in data:
+    print(row)
+
+row = int(input("Enter row (0-3): "))
+col = int(input("Enter column (0-3): "))
+
+change = input("Do you want to change this value? (yes/no) ")
+if change.lower() == "yes":
+    data[row][col] = int(input("Enter new value: "))
+
+for row in data:
+    print(row)

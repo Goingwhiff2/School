@@ -1,0 +1,10 @@
+data = [[i+j for j in range(4)] for i in range(4)]
+for row in data:
+    print(row)
+
+col_number = int(input("Enter a column number (0-3) to delete: "))
+for row in data:
+    del row[col_number]
+
+for row in data:
+    print(row)

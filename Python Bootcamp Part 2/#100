@@ -1,0 +1,9 @@
+data = [[i+j for j in range(4)] for i in range(4)]
+for row in data:
+    print(row)
+
+row_number = int(input("Enter a row number (0-3) to delete: "))
+del data[row_number]
+
+for row in data:
+    print(row)

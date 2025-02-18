@@ -1,0 +1,7 @@
+data = [[0]*4 for _ in range(4)]
+for row in range(4):
+    for col in range(4):
+        data[row][col] = int(input(f"Enter a value for [{row}][{col}]: "))
+
+row_number = int(input("Enter a row number (0-3) to display: "))
+print("Row data:", data[row_number])

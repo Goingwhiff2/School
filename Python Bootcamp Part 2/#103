@@ -1,0 +1,10 @@
+people = {"Alice": 25, "Bob": 30, "Charlie": 35}
+for name, age in people.items():
+    print(name, ":", age)
+
+new_name = input("Enter a new name: ")
+new_age = int(input("Enter their age: "))
+people[new_name] = new_age
+
+for name, age in people.items():
+    print(name, ":", age)

@@ -1,0 +1,6 @@
+subjects = ["Math", "Science", "English", "History", "Art", "Music"]
+print("Subjects:", subjects)
+disliked = input("Which subject don't you like? ")
+if disliked in subjects:
+    subjects.remove(disliked)
+print("Updated list:", subjects)

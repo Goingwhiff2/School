@@ -1,0 +1,3 @@
+name = input("Enter your name: ")
+vowel_count = sum(1 for char in name.lower() if char in "aeiou")
+print(f"Your name has {vowel_count} vowels.")

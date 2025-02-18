@@ -1,0 +1,4 @@
+colors = ["Red", "Blue", "Green", "Yellow", "Purple", "Orange", "Pink", "Black", "White", "Brown"]
+start = int(input("Enter a start number (0-4): "))
+end = int(input("Enter an end number (5-9): "))
+print("Selected colors:", colors[start:end+1])
